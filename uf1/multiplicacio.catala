@@ -1,0 +1,10 @@
+Crear un programa per multiplicar dos nombres. Els entrarem per teclat i donarà per pantalla
+
+llegir un nombre per teclat -> teclat E/S
+guardar el nombre en memoria -> memoria
+llegir un altre nombre per teclat -> teclat E/S
+guardar el nombre en memoria -> memoria
+multiplicar els dos nombres -> processador
+guardar el resultat en memoria -> memoria
+mostrar el resultat per pantalla -> pantalla E/S
+
