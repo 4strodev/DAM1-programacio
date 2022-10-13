@@ -1,12 +1,13 @@
 // Author Juan Alejandro Marin Ruiz AKA 4strodev
-package ex6;
+package ex7;
 
 import java.util.Scanner;
 
-public class Ex6 {
+public class Ex7 {
     public static void main(String[] args) {
         // Variables
         int num1, num2, num3;
+        int max;
         String errorMessage = "Introdueix un numero enter!";
 
         // Asking for numbers
@@ -14,12 +15,13 @@ public class Ex6 {
         num2 = askInt("Introdueix el segon numero: ", errorMessage);
         num3 = askInt("Introdueix el tercer numero: ", errorMessage);
 
-        // Checking order
-        if (num1 < num2 && num2 < num3) {
-            System.out.println("Son de ordre creixent");
-        } else {
-            System.out.println("No son de ordre creixent");
-        }
+        // Checking bigest number
+        max = num1;
+        max = num2 > max ? num2 : max;
+        max = num3 > max ? num3 : max;
+
+        // Showing max
+        System.out.printf("El nombre mes gran es: %d\n", max);
     }
 
     static int askInt(String inputMessage, String errorMessage) {
